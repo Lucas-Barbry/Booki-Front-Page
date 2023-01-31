@@ -1,0 +1,1 @@
+Ce premier push sert à configurer mon dépot local à mon dépot distant.
