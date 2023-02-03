@@ -13,3 +13,20 @@ body {
 .bold {
     font-weight: 700;
 }
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.fa-solid {
+    color: blue;
+}
+
+.block {
+    display: block;
+}
+
+.unmarked {
+    color: brown;
+}
