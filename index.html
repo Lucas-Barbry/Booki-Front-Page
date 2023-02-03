@@ -2,16 +2,258 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, maximum-width=1400px, initial-scale=1.0, maximum-scale=2">
+    <meta name="viewport" content="width=device-width, maximum-width=1400px, initial-scale=1.0, maximum-scale=2.0">
     <link rel="stylesheet" href="style.css">
-    <!-- Code kit perso erreur 404 <link rel="stylesheet" href="https://kit.fontawesome.com/5861d7e63d.css" crossorigin="anonymous">, je dois passer par CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/5861d7e63d.js" crossorigin="anonymous"></script>
     <title>Booki Home Page</title>
 </head>
-<body>
 
-    <h1>test</h1>
-    <i class="fa-solid fa-check"></i>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo/Booki.png" alt="logo Booki" id="logo"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Hébergements</a>
+                </li>
+                <li>
+                    <a href="#">Activités</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="top-of-page">
+        <div class="catchphrases">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+        </div>
+        <!--Espace Filtres + Choix cliquables -->
+        <div class="user-entries">
+            <form action="#" method="post">
+                <div class="accommodation-search">
+                    <button type="button">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                    <input type="text" placeholder="Nice, France ..." name="localisation" id="localisation">
+                    <input type="submit" value="Rechercher">
+                </div>
+                <div class="requirements">
+                    <p>Filtres</p>
+                    <div class="all-label-click">
+                        <div class="label-click">
+                            <label for="economique"><i class="fa-solid fa-money-bill-wave"></i>Economique</label>
+                            <input type="checkbox" name="economique" id="economique">
+                        </div>
+                        <div class="label-click">
+                            <label for="familial"><i class="fa-solid fa-person"></i>Familial</label>
+                            <input type="checkbox" name="familial" id="familial">
+                        </div>
+                        <div class="label-click">
+                            <label for="romantique"><i class="fa-solid fa-heart"></i>Romantique</label>
+                            <input type="checkbox" name="romantique" id="romantique">
+                        </div>
+                        <div class="label-click">
+                            <label for="animaux"><i class="fa-solid fa-dog"></i>Animaux autorisés</label>
+                            <input type="checkbox" name="animaux" id="animaux">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <main>
+        <div>
+            <i class="fa-solid fa-info"></i>
+            <p>Plus de 500 logements sont disponibles</p>
+        </div>
+        <!--Hébergements + plus populaires-->
+        <section class="list-popular">
+            <div class="accommodation-container">
+                <h2>Hébergements à Marseille</h2>
+                <!--Liste des appartements-->
+                <div class="accomodation-list-wrap">
+                    <a href="#">
+                        <article>
+                            <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aperçu auberge la canebière">
+                            <div class="details">
+                                <div class="name-price">
+                                    <p class="bold">Auberge La Canebière</p>
+                                    <p>Nuit à partir de 25€</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star unmarked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <!--
+                    <a href="#">
+                        <article>
+                            <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aperçu auberge la canebière">
+                            <div class="details">
+                                <div class="name-price">
+                                    <p class="bold">Auberge La Canebière</p>
+                                    <p>Nuit à partir de 25€</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star unmarked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>
+                            <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aperçu auberge la canebière">
+                            <div class="details">
+                                <div class="name-price">
+                                    <p class="bold">Auberge La Canebière</p>
+                                    <p>Nuit à partir de 25€</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star unmarked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>
+                            <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aperçu auberge la canebière">
+                            <div class="details">
+                                <div class="name-price">
+                                    <p class="bold">Auberge La Canebière</p>
+                                    <p>Nuit à partir de 25€</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star unmarked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>
+                            <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aperçu auberge la canebière">
+                            <div class="details">
+                                <div class="name-price">
+                                    <p class="bold">Auberge La Canebière</p>
+                                    <p>Nuit à partir de 25€</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star unmarked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>
+                            <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aperçu auberge la canebière">
+                            <div class="details">
+                                <div class="name-price">
+                                    <p class="bold">Auberge La Canebière</p>
+                                    <p>Nuit à partir de 25€</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star unmarked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    -->
+                </div>
+                <p class="bold">Afficher plus</p>
+            </div>
+                <!--Liste plus populaires-->
+            <div class="popular-container">
+                <div>
+                    <p class="bold">Les plus populaires</p>
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <a href="#">
+                    <!--Disposition images/infos horizon, différent de hébergements-->
+                    <article class="popular-disposition">
+                        <img src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="aperçu Hôtel Le soleil du matin">
+                        <div class="popular-details">
+                            <div class="name-price">
+                                <p class="bold">Hôtel Le soleil du matin</p>
+                                <p>Nuit à partir de 128€</p>
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star unmarked"></i>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <!--
+                    <a href="#">
+                        <article class="popular-disposition">
+                            <img src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="aperçu Hôtel Le soleil du matin">
+                            <div class="popular-details">
+                                <div class="name-price">
+                                    <p class="bold">Hôtel Le soleil du matin</p>
+                                    <p>Nuit à partir de 128€</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star unmarked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="popular-disposition">
+                            <img src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="aperçu Hôtel Le soleil du matin">
+                            <div class="popular-details">
+                                <div class="name-price">
+                                    <p class="bold">Hôtel Le soleil du matin</p>
+                                    <p>Nuit à partir de 128€</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star unmarked"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    -->
+            </div>
+        
+        </section>
+    </main>
     
 </body>
 </html>
