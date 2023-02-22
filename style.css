@@ -1,32 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
-* {
-    box-sizing: border-box;
-  }
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+:root {
+  --color-grey: #f2f2f2;
+  --color-blue: #0065fc;
+  --color-light-cyan-blue: #deebff;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%; /* 1 REM = 10px */
+}
 body {
-    background-color: white;
-    color: black;
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0rem;
+  text-align: left;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 30px;
 }
-
-.bold {
-    font-weight: 700;
+header img {
+  width: 6.1rem;
 }
-
+ul > li {
+  list-style-type: none;
+}
 ul {
-    padding: 0;
-    list-style-type: none;
+  width: 243px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.link {
+  padding: 48px 0;
+  width: 50%;
+  text-align: center;
+}
+.link:hover {
+  border-top: 2px solid var(--color-blue);
+  padding-top: 46px;
+  color: var(--color-blue);
 }
 
-.fa-solid {
-    color: blue;
+/* Section Top-of-page */
+.user-choices {
+  margin: 20px 0 35px;
+}
+.accommodation-search {
+  margin: 0 auto 32px auto;
+}
+.btn-chercher {
+  height: 49px;
+  width: 132px;
+  border-radius: 0 15px 15px 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: var(--color-blue);
+}
+.btn-chercher:hover {
+  background-color: #0d00fc;
+}
+.user-entries {
+  height: 49px;
+  padding: 14px 17px;
+  outline: none;
+  border: 1px solid var(--color-grey);
+}
+.user-entries::placeholder {
+  font-style: italic;
+  color: black;
+}
+#geocalisation {
+  height: 49px;
+  width: 50px;
+  border-radius: 15px 0 0 15px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+.filter-button {
+  height: 48px;
+  border-radius: 25px;
+  padding: 4px 20px 4px 20px;
+  border: #d9d9d9 solid 2px;
+}
+.label-click i {
+  color: var(--color-blue);
+  font-size: 1.25em;
+}
+.accommodation-search i {
+  font-size: 1.25em;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + label {
+  background-color: var(--color-light-cyan-blue);
+}
+#margin-fa-filter {
+  margin-right: 10px;
+}
+.filter-button:hover {
+  background-color: var(--color-light-cyan-blue);
+}
+label:hover {
+  cursor: pointer;
+}
+.all-label-click {
+  gap: 17px 35px;
 }
 
-.block {
-    display: block;
+/* Hébergements*/
+
+.fa-info::before {
+  color: var(--color-blue);
+  display: flex;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
+}
+.appartements-list {
+  justify-content: space-between;
+gap: 3%;
+row-gap: 30px;
+}
+.list-popular {
+  background-color: var(--color-grey);
+  height: 626px;
+  border-radius: 20px;
 }
 
-.unmarked {
-    color: brown;
+.accommodation-container {
+  width: 70%;
+}
+.popular-container {
+  width: 30%;
+}
+.card-img-height-fit {
+  height: 124px;
+}
+.full-card {
+  height: 199px;
+  border-radius: 20px;
+  border: #0d00fc 1px solid;
+}
+
+/* UI */
+
+.ui-titre-section {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.ui-font1 /* texte des bouttons section filtre */ {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.ui-font2 /*"filtre", placeholder texte, en savoir plus */ {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+.ui-font3 /* nom appartement */ {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.ui-card-price {
+  font-size: 14px;
+  line-height: 16.5px;
+}
+.ui-titre-card {
+  font-weight: 700;
+}
+.ui-link-header {
+  font-weight: 500;
+}
+.ui-font-600 {
+  font-weight: 600;
+}
+.v-margin8 {
+  margin: 8px 0;
+}
+.h-margin32r-6l {
+  margin: 0 32px 0 6px;
+}
+.h-margin11r {
+  margin: 0 11px 0 0;
+}
+
+/* Display*/
+
+.flex {
+  display: flex;
+}
+
+.inlineblock {
+  display: inline-block;
+}
+
+/* justify-content */
+
+.jc-center {
+  justify-content: center;
+}
+.jc-flexstart {
+  justify-content: flex-start;
+}
+.jc-flexend {
+  justify-content: flex-end;
+}
+.jc-spacebetween {
+  justify-content: space-between;
+}
+.jc-spacearound {
+  justify-content: space-around;
+}
+
+.jc-stretch {
+  justify-content: stretch;
+}
+
+/* align-items */
+
+.ai-center {
+  align-items: center;
+}
+.ai-flexstart {
+  align-items: flex-start;
+}
+.ai-flexend {
+  align-items: flex-end;
+}
+
+/* align-self */
+.as-center {
+  align-self: center;
+}
+
+/* flex direction + wrap */
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.grow1 {
+  flex-grow: 1;
 }
