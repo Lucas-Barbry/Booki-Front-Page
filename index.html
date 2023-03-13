@@ -2,85 +2,82 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, maximum-width=1400px, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="normalize.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, maximum-width=1400px, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
   <script defer src="https://kit.fontawesome.com/5861d7e63d.js" crossorigin="anonymous" rel="preload"></script>
   <title>Booki Home Page</title>
 </head>
 
 <body>
   <header class="flex jc-spacebetween">
-    <a href="index.html" class="flex as-center"><img src="images/logo/Booki.png" alt="logo Booki" id="logo" /></a>
+    <a href="index.html" class="flex as-center"><img src="images/logo/Booki.png" alt="logo Booki" id="logo"></a>
     <ul class="flex">
       <li class="link">
-        <a href="#box-popular" class="ui-link-header">Hébergements</a>
+        <a href="#box-popular">Hébergements</a>
       </li>
       <li class="link">
-        <a href="#activites" class="ui-link-header">Activités</a>
+        <a href="#activites">Activités</a>
       </li>
     </ul>
   </header>
 
   <section class="top-of-page">
-    <div class="catchphrases">
       <h1 class="ui-titre-section">
         Trouvez votre hébergement pour des vacances de rêve
       </h1>
-      <p class="v-margin8">En plein centre-ville ou en pleine nature</p>
-    </div>
+      <p>En plein centre-ville ou en pleine nature</p>
     <!--Espace Filtres + Choix cliquables -->
     <div class="user-choices">
       <form action="#" method="post">
-        <div class="accommodation-search flex ai-center">
-          <button type="button" id="geocalisation">
+        <div class="flex ai-center">
+          <button type="button" id="api-geocalisation">
             <i class="fa-solid fa-location-dot fa-lg"></i>
           </button>
-          <div class="flex search-wrapper">
-            <input type="text" placeholder="Nice, France ..." name="localisation" id="localisation"
-              class="user-entries ui-font2" autocomplete="off" />
+          <div class="flex">
+            <input type="text" placeholder="Ville, Pays" name="localisation" id="localisation" class="user-entries ui-font2" autocomplete="off">
             <button type="submit" class="btn-chercher ui-font2 flex ai-center">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <p class="flex rechercher">Rechercher</p>
+              <span class="flex rechercher">Rechercher</span>
             </button>
           </div>
         </div>
         <div class="requirements flex ai-center">
-          <p class="ui-font2 h-margin32r-6l">Filtres</p>
+          <p class="ui-font2">Filtres</p>
           <div class="all-label-click flex wrap">
             <div class="label-click">
-              <input type="checkbox" name="economique" id="economique" />
+              <input type="checkbox" name="economique" id="economique">
               <label for="economique" class="filter-button flex ai-center ui-font1">
-                <i class="fa-solid fa-money-bill-wave" id="margin-fa-filter"></i>Economique
+                <i class="fa-solid fa-money-bill-wave margin10r"></i>Economique
               </label>
             </div>
             <div class="label-click">
-              <input type="checkbox" name="familial" id="familial" />
+              <input type="checkbox" name="familial" id="familial">
               <label for="familial" class="filter-button flex ai-center ui-font1">
-                <i class="fa-solid fa-person" id="margin-fa-filter"></i>Familial
+                <i class="fa-solid fa-person margin10r"></i>Familial
               </label>
             </div>
             <div class="label-click">
-              <input type="checkbox" name="romantique" id="romantique" />
+              <input type="checkbox" name="romantique" id="romantique">
               <label for="romantique" class="filter-button flex ai-center ui-font1">
-                <i class="fa-solid fa-heart" id="margin-fa-filter"></i>Romantique
+                <i class="fa-solid fa-heart margin10r"></i>Romantique
               </label>
             </div>
 
             <div class="label-click">
-              <input type="checkbox" name="animaux" id="animaux" />
+              <input type="checkbox" name="animaux" id="animaux">
               <label for="animaux" class="filter-button flex ai-center ui-font1">
-                <i class="fa-solid fa-dog as-center" id="margin-fa-filter"></i>Animaux autorisés
+                <i class="fa-solid fa-dog margin10r"></i>Animaux autorisés
               </label>
             </div>
           </div>
         </div>
       </form>
     </div>
-    <div class="flex">
+    <div class="flex v-margin40d">
       <i class="fa-solid fa-info h-margin11r"></i>
-      <p class="flex ai-center v-margin40d">
+      <p class="flex ai-center">
         Plus de 500 logements sont disponibles dans cette ville
       </p>
     </div>
@@ -92,18 +89,18 @@
       <div class="flex column box-hebergement">
         <h2 class="ui-titre-section">Hébergements à Marseille</h2>
         <!--Liste des appartements-->
-        <div class="appartements-list flex wrap jc-spacebetween row-gap30">
-          <a href="#" class="full-card width-card">
+        <div class="appartements-list flex wrap jc-spacebetween">
+          <a href="#" class="full-card">
             <article class="height-199">
               <div class="image-container">
-                <img class="card-img-fit" src="images\hebergements\3_medium\marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                  srcset="
-                      images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg   991w,
-                      images\hebergements\3_medium\marcus-loke-WQJvWU_HZFo-unsplash.jpg 1400w
-                    " alt="aperçu auberge la canebière" loading="lazy" />
+                <img class="card-img-fit" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+                  srcset=" 
+                    images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg   991w, 
+                    images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1400w " 
+                    alt="aperçu auberge la canebière" loading="lazy">
               </div>
               <div class="details">
-                <p class="ui-font3">Auberge La Canebière</p>
+                <h3 class="ui-font3">Auberge La Canebière</h3>
                 <p class="ui-card-price">
                   Nuit à partir de 25<span class="ui-font-600">€</span>
                 </p>
@@ -117,17 +114,17 @@
               </div>
             </article>
           </a>
-          <a href="#" class="full-card width-card">
+          <a href="#" class="full-card">
             <article class="height-199">
               <div class="image-container">
-                <img class="card-img-fit" src="images\hebergements\3_medium\fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                <img class="card-img-fit" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                   srcset="
-                      images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg   991w,
-                      images\hebergements\3_medium\fred-kleber-gTbaxaVLvsg-unsplash.jpg 1400w
-                    " alt="aperçu Hôtel du port" loading="lazy" />
+                      images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg   991w,
+                      images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1400w
+                    " alt="aperçu Hôtel du port" loading="lazy">
               </div>
               <div class="details">
-                <p class="ui-font3">Hôtel du port</p>
+                <h3 class="ui-font3">Hôtel du port</h3>
                 <p class="ui-card-price">
                   Nuit à partir de 52<span class="ui-font-600">€</span>
                 </p>
@@ -141,16 +138,16 @@
               </div>
             </article>
           </a>
-          <a href="#" class="full-card width-card">
+          <a href="#" class="full-card">
             <article class="height-199">
               <div class="image-container">
-                <img class="card-img-fit" src="images\hebergements\3_medium\reisetopia-B8WIgxA_PFU-unsplash.jpg" srcset="
-                      images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg   991w,
-                      images\hebergements\3_medium\reisetopia-B8WIgxA_PFU-unsplash.jpg 1400w
-                    " alt="aperçu Hôtel Les mouettes" loading="lazy" />
+                <img class="card-img-fit" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" srcset="
+                      images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg   991w,
+                      images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1400w
+                    " alt="aperçu Hôtel Les mouettes" loading="lazy">
               </div>
               <div class="details">
-                <p class="ui-font3">Hôtel Les mouettes</p>
+                <h3 class="ui-font3">Hôtel Les mouettes</h3>
                 <p class="ui-card-price">
                   Nuit à partir de 76<span class="ui-font-600">€</span>
                 </p>
@@ -164,17 +161,17 @@
               </div>
             </article>
           </a>
-          <a href="#" class="full-card width-card">
+          <a href="#" class="full-card">
             <article class="height-199">
               <div class="image-container">
-                <img class="card-img-fit" src="images\hebergements\3_medium\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                <img class="card-img-fit" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                   srcset="
-                      images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg   991w,
-                      images\hebergements\3_medium\annie-spratt-Eg1qcIitAuA-unsplash.jpg 1400w
-                    " alt="aperçu Hôtel de la mer" loading="lazy" />
+                      images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg   991w,
+                      images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1400w
+                    " alt="aperçu Hôtel de la mer" loading="lazy">
               </div>
               <div class="details">
-                <p class="ui-font3">Hôtel de la mer</p>
+                <h3 class="ui-font3">Hôtel de la mer</h3>
                 <p class="ui-card-price">
                   Nuit à partir de 46<span class="ui-font-600">€</span>
                 </p>
@@ -188,16 +185,16 @@
               </div>
             </article>
           </a>
-          <a href="#" class="full-card width-card">
+          <a href="#" class="full-card">
             <article class="height-199">
               <div class="image-container">
-                <img class="card-img-fit" src="images\hebergements\3_medium\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" srcset="
-                      images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg   991w,
-                      images\hebergements\3_medium\nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1400w
-                    " alt="aperçu Auberge Le Panier" loading="lazy" />
+                <img class="card-img-fit" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" srcset="
+                      images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg   991w,
+                      images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1400w
+                    " alt="aperçu Auberge Le Panier" loading="lazy">
               </div>
               <div class="details">
-                <p class="ui-font3">Auberge Le Panier</p>
+                <h3 class="ui-font3">Auberge Le Panier</h3>
                 <p class="ui-card-price">
                   Nuit à partir de 23<span class="ui-font-600">€</span>
                 </p>
@@ -211,17 +208,17 @@
               </div>
             </article>
           </a>
-          <a href="#" class="full-card width-card">
+          <a href="#" class="full-card">
             <article class="height-199">
               <div class="image-container">
-                <img class="card-img-fit" src="images\hebergements\3_medium\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                <img class="card-img-fit" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                   srcset="
-                      images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg   991w,
-                      images\hebergements\3_medium\febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1400w
-                    " alt="aperçu Hôtel Chez Amina" loading="lazy" />
+                      images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg   991w,
+                      images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1400w
+                    " alt="aperçu Hôtel Chez Amina" loading="lazy">
               </div>
               <div class="details">
-                <p class="ui-font3">Hôtel Chez Amina</p>
+                <h3 class="ui-font3">Hôtel Chez Amina</h3>
                 <p class="ui-card-price">
                   Nuit à partir de 96<span class="ui-font-600">€</span>
                 </p>
@@ -248,15 +245,14 @@
           <a href="#" class="flex full-card">
             <article class="flex height-144">
               <div class="image-container2">
-                <img class="card-img-fit2" src="images\hebergements\3_medium\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                  srcset="
-                      images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg   991w,
-                      images\hebergements\3_medium\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1400w
-                    " alt="aperçu Hôtel Le soleil du matin" loading="lazy" />
+                <img class="card-img-fit2" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" srcset="
+                      images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg   991w,
+                      images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1400w
+                    " alt="aperçu Hôtel Le soleil du matin" loading="lazy">
               </div>
               <div class="details2">
                 <div class="name-price">
-                  <p class="ui-font3">Hôtel Le soleil du matin</p>
+                  <h3 class="ui-font3">Hôtel Le soleil du matin</h3>
                   <p class="ui-card-price">
                     Nuit à partir de 128<span class="ui-font-600">€</span>
                   </p>
@@ -274,15 +270,15 @@
           <a href="#" class="flex full-card">
             <article class="flex height-144">
               <div class="image-container2">
-                <img class="card-img-fit2" src="images\hebergements\3_medium\aw-creative-VGs8z60yT2c-unsplash.jpg"
+                <img class="card-img-fit2" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
                   srcset="
-                      images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg   991w,
-                      images\hebergements\3_medium\aw-creative-VGs8z60yT2c-unsplash.jpg 1400w
-                    " alt="aperçu Chambres d'hôtes Au cœur de l'eau" loading="lazy" />
+                      images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg   991w,
+                      images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1400w
+                    " alt="aperçu Chambres d'hôtes Au cœur de l'eau" loading="lazy">
               </div>
               <div class="details2">
                 <div class="name-price">
-                  <p class="ui-font3">Chambres d'hôtes Au cœur de l'eau</p>
+                  <h3 class="ui-font3">Chambres d'hôtes Au cœur de l'eau</h3>
                   <p class="ui-card-price">
                     Nuit à partir de 71<span class="ui-font-600">€</span>
                   </p>
@@ -300,15 +296,15 @@
           <a href="#" class="flex full-card">
             <article class="flex height-144">
               <div class="image-container2">
-                <img class="card-img-fit2" src="images\hebergements\3_medium\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                <img class="card-img-fit2" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                   srcset="
-                      images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg   991w,
-                      images\hebergements\3_medium\febrian-zakaria-sjvU0THccQA-unsplash.jpg 1400w
-                    " alt="aperçu Hôtel Bleu et Blanc" loading="lazy" />
+                      images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg   991w,
+                      images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1400w
+                    " alt="aperçu Hôtel Bleu et Blanc" loading="lazy">
               </div>
               <div class="details2">
                 <div class="name-price">
-                  <p class="ui-font3">Hôtel Bleu et Blanc</p>
+                  <h3 class="ui-font3">Hôtel Bleu et Blanc</h3>
                   <p class="ui-card-price">
                     Nuit à partir de 68<span class="ui-font-600">€</span>
                   </p>
@@ -331,63 +327,63 @@
   <aside class="flex column" id="activites">
     <h2 class="aside-title ui-titre-section">Activités à Marseille</h2>
     <div class="flex city-activites">
-      <a href="#" class="flex full-card-activites width-card-activites height-card-activites">
+      <a href="#" class="flex full-card-activites">
         <article class="art-img flex column">
           <div class="image-container-activites">
-            <img class="card-img-fit-activites" src="images\activites\3_medium\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            <img class="card-img-fit" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               srcset="
-                  images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg   991w,
-                  images\activites\3_medium\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1400w
-                " alt="aperçu du Vieux-Port de Marseille" loading="lazy" />
+                  images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg   991w,
+                  images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1400w
+                " alt="aperçu du Vieux-Port de Marseille" loading="lazy">
           </div>
           <div class="flex ai-center texte-activites">
-            <p class="ui-font3 flex padding-activites">Vieux-Port</p>
+            <h3 class="ui-font3 flex padding-activites">Vieux-Port</h3>
           </div>
         </article>
       </a>
-      <a href="#" class="flex full-card-activites width-card-activites height-card-activites">
+      <a href="#" class="flex full-card-activites">
         <article class="art-img flex column">
           <div class="image-container-activites">
-            <img class="card-img-fit-activites" src="images\activites\3_medium\paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+            <img class="card-img-fit" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               srcset="
-                  images\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg   991w,
-                  images\activites\3_medium\paul-hermann-QFTrLdQIRhI-unsplash.jpg 1400w
-                " alt="aperçu du Fort de Pomègues de Marseille" loading="lazy" />
+                  images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg   991w,
+                  images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1400w
+                " alt="aperçu du Fort de Pomègues de Marseille" loading="lazy">
           </div>
           <div class="flex ai-center texte-activites">
-            <p class="ui-font3 flex padding-activites">Fort de Pomègues</p>
+            <h3 class="ui-font3 flex padding-activites">Fort de Pomègues</h3>
           </div>
         </article>
       </a>
-      <a href="#" class="flex full-card-activites width-card-activites height-card-activites">
+      <a href="#" class="flex full-card-activites">
         <article class="art-img flex column">
           <div class="image-container-activites">
-            <img class="card-img-fit-activites"
-              src="images\activites\3_medium\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" srcset="
-                  images\activites\4_small\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg   991w,
-                  images\activites\3_medium\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1400w
-                " alt="aperçu du Parc national des Calanques" loading="lazy" />
+            <img class="card-img-fit"
+              src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" srcset="
+                  images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg   991w,
+                  images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1400w
+                " alt="aperçu du Parc national des Calanques" loading="lazy">
           </div>
           <div class="flex ai-center texte-activites">
-            <p class="ui-font3 flex padding-activites">
+            <h3 class="ui-font3 flex padding-activites">
               Parc national des Calanques
-            </p>
+            </h3>
           </div>
         </article>
       </a>
-      <a href="#" class="flex full-card-activites width-card-activites height-card-activites">
+      <a href="#" class="flex full-card-activites">
         <article class="art-img flex column">
           <div class="image-container-activites">
-            <img class="card-img-fit-activites" src="images\activites\3_medium\florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            <img class="card-img-fit" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
               srcset="
-                  images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg   991w,
-                  images\activites\3_medium\florian-wehde-xW9e8gdotxI-unsplash.jpg 1400w
-                " alt="aperçu Notre-Dame-de-la-Garde à Marseille" loading="lazy" />
+                  images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg   991w,
+                  images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1400w
+                " alt="aperçu Notre-Dame-de-la-Garde à Marseille" loading="lazy">
           </div>
           <div class="flex ai-center texte-activites">
-            <p class="ui-font3 flex padding-activites">
+            <h3 class="ui-font3 flex padding-activites">
               Notre-Dame-de-la-Garde
-            </p>
+            </h3>
           </div>
         </article>
       </a>
