@@ -21,14 +21,13 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
+  max-width: 1400px;
   background-color: white;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0rem;
   text-align: left;
-  max-width: 1400px;
-  margin: auto;
   padding: 0 30px;
 }
 
@@ -206,6 +205,7 @@ label:hover {
 
 .full-card {
   background-color: white;
+  width: 100%;
   border-radius: 20px;
   padding: 5px;
   box-shadow: 2px 1px 4px 0 rgba(0, 0, 0, 0.1);
@@ -284,6 +284,7 @@ label:hover {
 
 .height-144 {
   height: 144px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -326,23 +327,19 @@ aside {
 }
 
 /*footer*/
-footer {
-  background-color: var(--color-grey);
-}
-
 footer h3 {
   margin-bottom: 8px;
 }
 
 .footer-container {
   padding: 45px 70px 45px 70px;
+  background-color: var(--color-grey);
 }
 
 .links-footer {
   gap: 10px;
   flex: 1 1 0;
   width: 200px;
-  margin: auto;
 }
 
 /* UI */
@@ -415,8 +412,6 @@ footer h3 {
   display: flex;
 }
 
-/* justify-content */
-
 .jc-spacebetween {
   justify-content: space-between;
 }
@@ -425,18 +420,13 @@ footer h3 {
   justify-content: space-evenly;
 }
 
-/* align-items */
-
 .ai-center {
   align-items: center;
 }
 
-/* align-self */
 .as-center {
   align-self: center;
 }
-
-/* flex direction + wrap */
 
 .column {
   flex-direction: column;
@@ -614,8 +604,7 @@ footer h3 {
     flex-direction: column;
   }
 
-  .popular-cards>.full-card,
-  .popular-cards>.full-card>article {
+  .popular-cards>.full-card {
     width: 100%;
   }
 
@@ -678,6 +667,10 @@ footer h3 {
     padding: 35px 29px;
     flex-direction: column;
     gap: 40px;
+  }
+  
+  .links-footer {
+    margin: auto;
   }
 
 }
