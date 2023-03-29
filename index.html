@@ -13,15 +13,18 @@
 <body>
   <header class="flex jc-spacebetween">
     <a href="index.html" class="flex as-center"><img src="images/logo/Booki.png" alt="logo Booki" id="logo"></a>
-    <ul class="flex">
-      <li class="link">
-        <a href="#box-popular">Hébergements</a>
-      </li>
-      <li class="link">
-        <a href="#activites">Activités</a>
-      </li>
-    </ul>
+    <nav>
+      <ul class="flex">
+        <li class="link">
+          <a href="#box-popular">Hébergements</a>
+        </li>
+        <li class="link">
+          <a href="#activites">Activités</a>
+        </li>
+      </ul>
+    </nav>
   </header>
+  
 
   <section class="top-of-page">
       <h1 class="ui-titre-section">
@@ -36,7 +39,7 @@
             <i class="fa-solid fa-location-dot fa-lg"></i>
           </button>
           <div class="flex">
-            <input type="text" placeholder="Ville, Pays" name="localisation" id="localisation" class="user-entries ui-font2" autocomplete="off">
+            <input type="text" placeholder="Marseille, France" name="localisation" id="localisation" class="user-entries ui-font2 black" autocomplete="off">
             <button type="submit" class="btn-chercher ui-font2 flex ai-center">
               <i class="fa-solid fa-magnifying-glass"></i>
               <span class="flex rechercher">Rechercher</span>

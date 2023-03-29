@@ -106,8 +106,7 @@ a {
 }
 
 .user-entries::placeholder {
-  font-style: italic;
-  color: black;
+  color: black ;
 }
 
 #api-geocalisation {
@@ -571,6 +570,12 @@ footer h3 {
     /* display none ne marche pas, solution alternative pour faire disparaitre le texte rechercher sur mobile*/
   }
 
+  .btn-chercher {
+    border-radius: 15px;
+    position: relative;
+    left: -15px;
+  }
+
   .fa-magnifying-glass::before {
     display: flex;
   }
@@ -668,9 +673,4 @@ footer h3 {
     flex-direction: column;
     gap: 40px;
   }
-  
-  .links-footer {
-    margin: auto;
-  }
-
 }
